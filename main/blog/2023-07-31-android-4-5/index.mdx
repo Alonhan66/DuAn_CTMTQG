@@ -1,0 +1,186 @@
+---
+slug: osmand-android-4-5-released
+title: OsmAnd 4.5 (Android)
+authors: eugene
+tags: [release, android]
+unlisted: true
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import AndroidStore from '@site/src/components/buttons/AndroidStore.mdx';
+import AppleStore from '@site/src/components/buttons/AppleStore.mdx';
+import LinksTelegram from '@site/src/components/_linksTelegram.mdx';
+import LinksSocial from '@site/src/components/_linksSocialNetworks.mdx';
+import Translate from '@site/src/components/Translate.js';
+import InfoIncompleteArticle from '@site/src/components/_infoIncompleteArticle.mdx';
+import ProFeature from '@site/src/components/buttons/ProFeature.mdx';
+
+Great news for Android users!  
+We're happy to announce the new 4.5 OsmAnd release for Android devices. 
+
+<!--truncate-->
+
+* BLE/ANT+ sensors: reworked connection, writing and viewing received data to GPX.
+* Free backup for favorites and settings to OsmAnd Cloud.
+* New format for Terrain maps with 3D Relief support.
+* Tracks management: updated UI, added sorting, support of nested folders.
+* Android Auto: new start menu for access favorites, tracks and poi categories.
+* One list of widgets for Top/Bottom panel.
+* New "Train" profile, allows to calculate railways routes.
+* Contour lines works with any "Map source".
+* Expanded list of default actions for external keyboards.
+* Custom routing files, added options to delete or overwrite.
+* Added option to "Announce deviation from the route".
+* Start screen: added option restore OsmAnd state from file.
+* Added Hazardous Materials classes for North America.
+* Added support of "Via ferrata" for pedestrian routing.
+* Added "CAI" scale for difficulty classification of the routes.
+* Fixed per-app language selection.
+* Added support themed icons.
+* OsmAnd Cloud: added option to delete account.
+* Accessibility: touch target size for all buttons changed to 48 dp fixed issue with map UI that was visible for screen readers.
+
+
+## BLE/ANT+ sensors
+
+Redesign [External sensror Plugin](https://osmand.net/docs/user/plugins/external-sensors):
+- reworked connection
+
+![Plugin ES](./img/external_sensors.png) ![Plugin ES](./img/external_sensors_1.png)
+
+- writing and viewing received [data to GPX](https://osmand.net/docs/user/plugins/trip-recording#recording-settings)
+
+![Plugin ES](./img/external_sensors_2.png) ![Plugin ES](./img/external_sensors_3.png)
+
+## Free account (Backup)
+
+For this release we added _OsmAnd Start_. It means that each our user can register own email for [OsmAnd Cloud](https://osmand.net/docs/user/personal/osmand-cloud).
+
+
+Now you can make free backup for Favorites and OsmAnd Settings
+Free OsmAnd Cloud account for Favorites: _OsmAnd Start_
+
+
+![start](./img/start.png) ![start](./img/start_1.png)
+
+## Terrain maps updates
+
+We added _Terrain map_ for countries in [Download maps](https://osmand.net/docs/user/start-with/download-maps) menu. This type of data can be used for generated [Slopes, Hillshades(paid)](https://osmand.net/docs/user/purchases/android#free-and-paid-features), and 3D maps([OsmAnd Pro](https://osmand.net/docs/user/purchases/android#pro-features)).
+
+Our updates:
+- [Slope](https://osmand.net/docs/user/plugins/contour-lines#slope-map) and [Hillshades](https://osmand.net/docs/user/plugins/contour-lines#hillshade-map) can be generated from _Terrain map_ data
+
+![terrain](./img/terrain.png) ![terrain](./img/terrain_0.png)
+
+- Redesign [_Terrain menu_](https://osmand.net/docs/user/map/configure-map-menu)
+
+![terrain](./img/terrain_1.png) ![terrain](./img/terrain_2.png)
+
+## Track management
+
+Redesign of the [_My Places > Tracks_](https://osmand.net/docs/user/personal/tracks) menu:
+- Added sorting.
+- Added filters:
+    - With the ability to save the filter.
+- Added folder options:
+    - Allow sharing folder of tracks of selection of tracks.
+- Allow deleting folder.
+- Added all tracks stat.
+
+![Track menu](./img/track_menu.png) ![Track menu](./img/track_menu_1.png)
+
+![Track menu](./img/track_menu_2.png) ![Track menu](./img/track_menu_3.png)
+
+## Android Auto improvments
+
+- New start menu for access Favorites, POIs, Map markers, Tracks, History categories.
+
+![AA](./img/android_auto.png)
+
+- Driving profile:
+   - If current profile is "Driving" (derived from Driving - Truck, Car, Motorcycle...), then AA should stay the same.
+   - If current profile is not "Driving", then it should change first in the list Driving.
+- Fixed laggy location.
+- Button to hide Screen menu.
+
+![AA](./img/android_auto_1.png)
+
+## Widget improvments
+
+We added one list of widgets for [Top/Bottom panels](https://osmand.net/docs/user/widgets/configure-screen#widget-panels):
+
+_OsmAnd menu → Configure screen → Top panel / Bottom panel_
+
+![widget](./img/widget.png) ![widget](./img/widget_1.png)
+
+## Train profile
+
+_Train_ profile was added for [Profile list](https://osmand.net/docs/user/personal/profiles). New profile allows to calculate railways routes.
+
+![Train](./img/tr.png)
+
+## Contour lines for Map sources
+
+[Contour lines](https://osmand.net/docs/user/plugins/contour-lines#contour-lines-map) works with any ["Map source"](https://osmand.net/docs/user/map/configure-map-menu):
+
+_OsmAnd menu → Configure map → Map source..._
+
+![contour lines](./img/contour_lines.png)
+
+## More actions for external keyboards
+
+Added the expanded list of default actions for [external keyboards](https://osmand.net/docs/user/map/interact-with-map#external-input-device-buttons).
+
+## Announce deviation from the route
+
+Added option to "Announce deviation from the route":
+
+_OsmAnd menu → Configure profile → Navigation settings → Voice prompts → Other → Announce deviation from the route_
+
+It is enabled by default.
+
+## Update for Start screen
+
+[Start screen](https://osmand.net/docs/user/start-with/first-steps#how-to-download-maps): added option restore OsmAnd state from file.
+
+![Start screen](./img/android_st.png)
+
+## Hazardous Materials classes for North America
+
+Added Hazardous Materials classes for North America.
+
+## "Via ferrata" for pedestrian routing
+
+Added support of "Via ferrata" for pedestrian routing.
+
+##  "CAI" scale
+
+Added "CAI" scale for difficulty classification of the routes.
+
+## Support themed icons
+
+Added support themed icons.
+
+## Option Delete Cloud account
+
+We added to opportunity to delete an account for [OsmAnd Cloud](https://osmand.net/docs/user/personal/osmand-cloud):
+
+_OsmAnd Menu → Settings → OsmAnd Cloud →  → Delete account_
+
+![OsmAnd Cloud](./img/delete_account.png)
+
+## Accessibility updates
+
+Accessibility: touch target size for all buttons changed to 48 dp fixed issue with map UI that was visible for screen readers.
+
+## Fixed
+
+- per-app language selection
+
+
+_______________________________________________
+
+<LinksSocial/>
+<LinksTelegram/>
+<AndroidStore/>
