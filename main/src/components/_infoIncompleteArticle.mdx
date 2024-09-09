@@ -1,0 +1,18 @@
+import Admonition from '@theme/Admonition';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<Admonition type="caution" icon="🚧&nbsp;" title="This article is incomplete">
+  <p>
+    This article is incomplete &amp; needs to be reviewed. You can help by creating a pull request.
+  </p>
+  <div>
+    <form>
+       <BrowserOnly>{() => 
+          <button formAction={"https://github.com/osmandapp/web/edit/main/main/" + 
+            window.location.pathname.slice(window.location.pathname.indexOf('docs'), window.location.pathname.slice(-1) === "/" ? -1 : undefined ) 
+              + ".mdx"  }
+            className="button button--primary">Make a contribution</button>
+       }</BrowserOnly>
+    </form>
+  </div>
+</Admonition>  
