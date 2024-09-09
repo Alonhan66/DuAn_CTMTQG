@@ -1,0 +1,216 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+.d-none {
+  display: none
+}
+
+.section {
+  padding: 16px 0;
+}
+
+.sectionAlt {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+
+.flex-1 {
+  flex: 1
+}
+
+.index-title {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+/**  DEFAULT DOCUSAURUS VALUES */
+:root {
+  --ifm-color-primary: #237BFF;
+  --ifm-color-primary-dark: #D28521;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+html[data-theme='dark'] {
+  --ifm-color-primary: #D28521;
+  --ifm-color-primary-dark: #D28521;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #1E1F20;
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-link-color: var(--ifm-color-secondary);
+  --ifm-footer-title-color: var(--ifm-color-white);
+}
+
+.pagination-nav__item:first-child .pagination-nav__label::before {
+  content: '← ';
+}
+
+.pagination-nav__item--next .pagination-nav__label::after {
+  content: ' →';
+}
+
+time {
+  color: #727272;
+}
+
+blockquote.question {
+border-left: 2px solid #ff8800;
+color: #212121;
+}
+
+blockquote.story {
+  color: #212121;
+  font-family:'Times New Roman', Times, serif;
+}
+
+div.question {
+  color: #212121;
+  font-weight: bold;
+  size: 16pt;
+  padding-bottom: 6pt;
+}
+
+table.blogimage {
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid #F2F2F2;
+}
+
+[data-theme='dark'] table.blogimage {
+  width: 100%;
+  background-color: #252628;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid #343434;
+}
+
+
+
+table.blogimage tr {
+  border-style: none;
+  /* display: table-cell; */
+}
+table.blogimage td {
+  border-style: none;
+}
+
+table.blogimage th {
+  border-style: none;
+}
+
+table.blogimage img {
+  max-height: 660px;
+  border-width: 1px;
+  border-color: #1E1F20;
+}
+
+.center {
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  width: auto;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promobutton {
+  width: 100%;
+  height: auto;
+  background-color: #ff8800;
+  border-radius: 5px;
+  border-style: none;
+  padding: 4%;
+  text-align: center;
+}
+
+.button-row {
+  display: flex;
+  column-gap: 20px;
+  justify-content: flex-start;
+}
+
+.button--active {
+  background-color: rgba(35, 123, 255, 0.2);
+  border-style: none;
+  color: #237BFF;
+  padding: 6px 12px 6px 12px;
+}
+
+.button--active:hover {
+  background-color: rgba(35, 123, 255);
+  border-style: none;
+  color: #ffffff;
+  padding: 6px 12px 6px 12px;
+}
+
+.button--black {
+  background-color: rgb(0, 0, 0);
+  border-style: none;
+  color: #ffffff;
+  padding: 12px 24px 12px 24px;
+  font-weight: bold;
+}
+
+.button--black:hover {
+  background-color: rgb(42, 42, 42);
+  border-style: none;
+  color: #ffffff;
+  padding: 12px 24px 12px 24px;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+.emoji {
+  padding-right: 12px;
+}
+
+.inlist {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.blogPostTitle {
+  font-size: 2px;
+}
+
+.navbar__search { 
+  padding-left: 16px;
+}
+
+.my-page-wrapper {
+  display: flex;
+  justify-content: center;
+}
